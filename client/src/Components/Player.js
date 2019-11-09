@@ -1,8 +1,13 @@
 import React from 'react'
 
-function Player (props){
-  console.log(props)
-  return(<div>hithere</div>)
+class Player extends React.Component {
+  render(){
+  return(
+    <article key={this.props.id}>
+      <h3>{this.props.player.name}</h3>
+      <p>{this.props.player.country}</p>
+    </article>
+  )}
 }
 
 export default Player;

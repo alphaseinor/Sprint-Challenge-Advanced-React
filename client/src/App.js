@@ -1,11 +1,12 @@
 import React from 'react';
 import Players from './Components/Players.js'
+import './App.css'
 
 function App() {
   return (
-    <div>
+    <section>
       <Players />
-    </div>
+    </section>
   );
 }
 

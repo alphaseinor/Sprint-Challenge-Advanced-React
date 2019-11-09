@@ -21,11 +21,11 @@ class Players extends React.Component {
   render(){
     const {players} = this.state;
     return(
-      <div>
-        {players.map(player => {
-          return <Player player={player} />
+      <>
+        {players.map((player, id) => {
+          return <Player key={id} player={player} />
         })}
-      </div>
+      </>
     )
   }
 
