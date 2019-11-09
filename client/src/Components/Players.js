@@ -9,10 +9,18 @@ class Players extends React.Component {
 
   componentDidMount = () => {
     axios.get("http://localhost:5000/api/players")
-         .then(r =>{
+         .then(result =>{
            console.log(result)
          })
   }
+
+  render(){
+    return(
+      <>
+      </>
+    )
+  }
+
 }
 
 export default Players;
