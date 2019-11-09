@@ -1,12 +1,18 @@
 import React from 'react';
 import Players from './Components/Players.js'
 import './App.css'
+import NavBar from './Components/NavBar.js'
 
 function App() {
   return (
-    <section>
-      <Players />
-    </section>
+    <>
+      <header>
+        <NavBar />
+      </header>
+      <section>
+        <Players />
+      </section>
+    </>
   );
 }
 
